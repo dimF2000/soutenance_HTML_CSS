@@ -1,0 +1,603 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+
+header nav {
+    position: relative;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+header input[type="text"]{
+    border-radius: 25px;
+    border: 2px solid gray;
+    padding: 4px 20px;
+    box-shadow: 0.5px 0.5px 0.5px rgba(128, 128, 128, 0.5);
+}
+
+header input[type="text"]::placeholder {
+    text-align: left;
+    padding-left: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+header .enquire {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    left: 100px;
+}
+
+header svg {
+    margin-left: 20px;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 50px 150px;
+    background-color: #f8f9fa;
+}
+
+.hero h1 {
+    text-align: left;
+    font-size: 12px;
+    color: rgb(8, 140, 255);
+}
+
+.hero  .hero-p{
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    color: #042c5a;
+    position: relative;
+    bottom: 20px;
+    text-transform: capitalize;
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+.hero .position
+{
+    display: flex;
+}
+
+.hero .hero-left 
+{
+    text-align: left;
+    width: 40%;
+    height: 300px;
+    display: flex;
+    justify-content: flex-start; /* Alignement à gauche */
+    align-items: center; /* Centre verticalement */
+    /* background-color: #ff6600; */
+}
+
+.hero .hero-left img
+{
+    display: block;
+    width: 400px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.hero .hero-right 
+{
+    text-align: left;
+    width: 60%;
+    height: 300px;
+    flex: 1; /* Occupe une partie de l'espace disponible */
+    display: flex;
+    flex-direction: column; /* Organise les éléments verticalement */
+    gap: 10px; /* Espace entre les images et le texte */
+    
+}
+
+
+.hero .hero-right .images-container .img1
+{
+    display: block;
+    width: 300px;
+    height: 180px;
+    border-radius: 8px;
+}
+
+
+.hero .hero-right .images-container .img2
+{
+    display: block;
+    width: 210px;
+    height: 130px;
+    border-radius: 8px;
+    position: relative;
+    top: 20px;
+    margin-left: 50px;
+}
+
+
+.images-container {
+    display: flex; /* Aligne les deux images horizontalement */
+    gap: 10px; /* Espace entre les images */
+}
+
+.images-container img {
+    max-width: 48%; /* Ajuste la largeur des images */
+    height: auto; /* Conserve les proportions */
+}
+
+.hero .position .hero-right p {
+    margin-top: 10px; /* Supprime la marge par défaut */
+    font-size: 15px; /* Taille du texte */
+    line-height: 1.5; /* Interligne */
+    color: #3f3b3b;
+}
+
+
+
+
+.hero .read-more {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 20px 60px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.services {
+    margin: 0 ;
+    padding: 50px 200px;
+    text-align: center;
+}
+
+.services .title {
+    color: #2563eb;  /* Bleu */
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.services h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #111827;  /* Gris foncé */
+    margin-bottom: 3rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;  /* 1 colonne sur mobile */
+    gap: 2rem;
+}
+
+.service-card {
+    text-align: left;
+}
+
+.service-category {
+    font-size: 0.875rem;
+    color: #6b7280;  /* Gris */
+}
+
+.service-card  .decale{
+    margin-left: 28px;
+    line-height: 0.3px;
+}
+
+.service-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111827;
+}
+
+.services-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.services button {
+    margin-top: 20px;
+    border-radius: 50px;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 15px 60px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* 2 colonnes sur desktop */
+@media (min-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+.featured {
+    padding: 50px 200px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.featured .title {
+    color: #2563eb; 
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.featured h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #111827;  
+    margin-bottom: 3rem;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .featured-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.card-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.icon-circle {
+    flex-shrink: 0;  /* Empêche l'icône de rétrécir */
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8f0fe;
+}
+
+.text-content {
+    flex-grow: 1;  /* Permet au texte de prendre l'espace restant */
+}
+.blue {
+    background-color: #e8f0fe;
+}
+
+.pink {
+    background-color: #ffe8f0;
+}
+
+.green {
+    background-color: #e8fff0;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+
+.card p {
+    color: #64748b;
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+/* Pour les émojis utilisés comme icônes */
+.icon-circle i {
+    font-style: normal;
+    font-size: 1.25rem;
+}
+
+.icon-circle svg {
+    height: 35px;
+    width: 35px;
+}
+
+/* property */
+
+.property-types {
+    padding: 5rem 1rem;
+    background-color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex-content {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.illustration {
+    flex: 1;
+}
+
+.illustration img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    flex: 1;
+}
+
+.content p{
+    font-weight: bold;
+}
+
+
+
+.subtitle {
+    color: #2563eb;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    color: #1e293b;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.description {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.property-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.property-item h3 {
+    color: #1e293b;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.property-item p {
+    color: #64748b;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .flex-content {
+        flex-direction: column;
+    }
+    
+    .property-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Section Become Agent */
+.become-agent {
+    background-color: #151921;
+    padding: 4rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.agent-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.agent-text h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.agent-text p {
+    color: #8b8b8b;
+}
+
+.join-button {
+    background-color: #ff4500;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #151921;
+    color: white;
+    padding: 4rem 0 2rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.footer-column p {
+    color: #8b8b8b;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-icon {
+    background-color: #252932;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social-icon  svg{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-column ul li a {
+    color: #8b8b8b;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: white;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 1rem;
+    padding: 2px 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    background-color: white;
+    color: #252932;
+}
+
+.newsletter-form button {
+    height: 40px;
+    width: 40px;
+    background-color: #ff4500;
+    color: white;
+    border-radius: 1000px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #252932;
+    color: #8b8b8b;
+}
+
+.highlight {
+    color: #ff4500;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .agent-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
