@@ -1,0 +1,218 @@
+*{
+    margin: 0;/*supprimer toute les marges*/
+    padding: 0;/*supprimer tout lees espaces internes*/
+    box-sizing: border-box;/*meilleurs getions des tailles*/
+}
+body, html{
+    height: 100%;/*pour permettre au flexbox de prendre toute la hauteur */
+}
+/*.container{
+    display: flex;
+    
+    
+}*/
+
+header {
+    background-color: #fff;
+    padding: 20px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+
+header nav {
+    position: relative;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+header input[type="text"]{
+    border-radius: 25px;
+    border: 2px solid gray;
+    padding: 4px 20px;
+    box-shadow: 0.5px 0.5px 0.5px rgba(128, 128, 128, 0.5);
+}
+
+header input[type="text"]::placeholder {
+    text-align: left;
+    padding-left: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+header .enquire {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    left: 100px;
+}
+
+header svg {
+    margin-left: 20px;
+}
+
+
+.section1{
+    display: flex;/*Utiliser flexbox*/
+    flex-direction: row;/*alligner horizontalement*/
+    justify-content: center;/*pour mettre les deux setion aux centre*/
+    height: 100%;/*prendre 100% de la hauteur de l'ecran*/
+    padding: 60px;/* espacement interne du contenu*/
+    background-color: rgb(223, 224, 226);
+    gap: 100px;/*espace entre les deux section*/
+    width: 100%;/*prendre toute la largeur de page*/
+}
+h1{
+    font-size: 15px;
+    color: rgb(0, 0, 255);
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+h2{
+   font-size: 40px; /*taille de la police*/
+   font-family: Arial, sans-serif;
+}
+h1, h2{
+    line-height: 1;/*espacement entre h1 et h2*/
+}
+
+.section2{
+    display: flex;/*Utiliser flexbox*/
+    flex-direction: row;/*alligner horizontalement*/
+    justify-content: center;/*pour mettre les deux setion aux centre*/
+    height: 100%;/*prendre 100% de la hauteur de l'ecran*/
+    background-color: white;
+    gap: 150px;/*espace entre les deux section*/
+    width: 100%;/*prendre toute la largeur de page*/
+}
+
+.section2 img{
+    height: 500px;
+    width: 500px;
+    object-fit: contain;
+}
+.sect22{
+    padding-top: 80px ;
+}
+.sect22 button{
+    padding: 10px 20px;
+    background-color: rgb(241, 112, 6);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color o.3s, transform 0.2s;
+    margin: 60px;
+    margin-left: 0;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+button:hover{
+    background-color: rgb(172, 71, 13);
+    transform: scale(0.9);
+}
+.section3{
+    justify-content: center;/*pour mettre les deux setion aux centre*/
+    height: 100%;/*prendre 100% de la hauteur de l'ecran*/
+    padding: 60px;/* espacement interne du contenu*/
+    background-color: rgb(223, 224, 226);
+    gap: 10px;/*espace entre les deux section*/
+    width: 100%;/*prendre toute la largeur de page*/
+    
+}
+.sect31{
+    text-align: center;
+}
+.div1{
+    display: flex;
+    padding: 20px;
+    background-color: rgb(223, 224, 226);
+    gap: 30px;
+    justify-content: center;
+    
+}
+.test1{
+    margin-top: 20px;
+}
+.card1{
+    display: flex;
+    height: 140px;
+    width: 350px;
+    border-radius: 10px;/*coin arrondi*/
+     background-color: white;
+     justify-content: center;
+     
+}
+.card1 img{
+    margin: 20px;
+    
+}
+.section4{
+     justify-content: center;/*pour mettre les deux setion aux centre*/
+     height: 100%;/*prendre 100% de la hauteur de l'ecran*/
+     padding: 80px;/* espacement interne du contenu*/
+     margin-bottom: 200px;
+     border: 1px soolid #ddd;
+     background-color: white;
+     gap: 200px;/*espace entre les deux section*/
+     width: 100%;/*prendre toute la largeur de page*/
+ }
+.sect41{
+    text-align: center;
+}
+.team{
+    display: flex;
+    flex-direction: row;
+    gap: 0px;/*espace entre les images*/
+    justify-content: center;
+    margin-top: 100px;
+}
+.team img{
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+} 
+.set1{
+    background-color: rgb(223, 224, 226);
+    /* font-family: Arial, sans-serif; */
+    margin: 20px;
+    
+}
+
+.section4 .team .set1 .image
+{
+    position: relative;
+    display: flex;
+    left: 150px;
+    bottom: 75px;
+
+}
+
+.section4 .team .set1 .image img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 3px;
+
+    
+}
